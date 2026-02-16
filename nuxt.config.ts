@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
     compatibilityDate: '2025-07-15',
     devtools: { enabled: false },
+    ssr: true,
     css: [
         '~/assets/scss/app.scss',
         // pages
@@ -20,5 +21,8 @@ export default defineNuxtConfig({
     components: [
         '~/components/shared',
         '~/components/widgets'
-    ]
+    ],
+    features: {
+        inlineStyles: true
+    }
 })

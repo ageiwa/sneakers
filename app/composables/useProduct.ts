@@ -14,7 +14,7 @@ export function useProduct() {
     const totalPages = ref(0)
     const tolalItems = ref(0)
     const page = ref(1)
-    const limit = ref(4)
+    const limit = ref(8)
 
     const queryParams = computed(() => ({
         page: page.value,

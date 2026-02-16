@@ -32,7 +32,7 @@
         </Container>
 
         <div class="product-list__footer">
-            <button v-if="status !== 'error' || data && data.currentPage < data.totalPages" class="footer__show-more" :class="{ 'footer__show-more_pending': status === 'pending' }" @click="showMore">
+            <button v-if="status !== 'error' && data && data.currentPage < data.totalPages" class="footer__show-more" :class="{ 'footer__show-more_pending': status === 'pending' }" @click="showMore">
                 <template v-if="status === 'success'">
                     Показать еще
                 </template>
@@ -42,7 +42,7 @@
                 </template>
             </button>
 
-            <template v-else>
+            <template v-else-if="status === 'error'">
                 <span class="footer__error-message">
                     Произошла ошибка, попробуйте позже
                 </span>

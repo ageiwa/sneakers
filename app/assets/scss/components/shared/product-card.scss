@@ -29,6 +29,7 @@
         font-size: 24px;
         line-height: 100%;
         color: #000;
+        white-space: nowrap;
     }
 
     .price__price-x2 {
@@ -39,6 +40,7 @@
         color: #fff;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.12);
         background-color: #000;
+        white-space: nowrap;
     }
 
     .info__name {
@@ -48,5 +50,33 @@
         line-height: 140%;
         color: #000;
         display: block;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .product-card {
+        &__actions {
+            top: 0;
+            right: 0;
+        }
+
+        &__img {
+            height: 93px;
+        }
+
+        &__info {
+            margin-top: 15px;
+        }
+
+        .info__price {
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 9px;
+        }
+
+        .info__name {
+            margin-top: 3px;
+            font-size: 12px;
+        }
     }
 }
