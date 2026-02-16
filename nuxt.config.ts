@@ -4,14 +4,18 @@ export default defineNuxtConfig({
     devtools: { enabled: false },
     css: [
         '~/assets/scss/app.scss',
-        '~/assets/scss/pages/index.scss',
+        // pages
+        '~/assets/scss/pages/catalog.scss',
         // widgets
         '~/assets/scss/components/widgets/app-header.scss',
         '~/assets/scss/components/widgets/app-footer.scss',
         '~/assets/scss/components/widgets/home-preview.scss',
+        '~/assets/scss/components/widgets/product-list.scss',
         // shared
         '~/assets/scss/components/shared/container.scss',
-        '~/assets/scss/components/shared/burger-button.scss'
+        '~/assets/scss/components/shared/burger-button.scss',
+        '~/assets/scss/components/shared/product-card.scss',
+        '~/assets/scss/components/shared/favorite-button.scss',
     ],
     components: [
         '~/components/shared',
