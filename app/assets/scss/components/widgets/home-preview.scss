@@ -1,0 +1,28 @@
+.home-preview {
+    .container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 64px;
+        line-height: 110%;
+        text-transform: uppercase;
+        color: #000;
+    }
+
+    &__to-catalog {
+        padding: 10px 28.5px;
+        width: min-content;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 143%;
+        color: #fff;
+        background-color: #ff0000;
+        white-space: nowrap;
+    }
+}
