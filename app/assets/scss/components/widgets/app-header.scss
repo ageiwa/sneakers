@@ -5,8 +5,7 @@
     position: fixed;
 
     .container {
-        padding-top: 19px;
-        padding-bottom: 19px;
+        padding: 19px 60px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -62,7 +61,11 @@
         .container {
             padding: 10px 20px;
         }
+    }
+}
 
+@media (max-width: 767.98px) {
+    .app-header {
         &__logo {
             width: 28px;
             height: 28px;

@@ -7,6 +7,7 @@ export default defineNuxtConfig({
         '~/assets/scss/pages/index.scss',
         // widgets
         '~/assets/scss/components/widgets/app-header.scss',
+        '~/assets/scss/components/widgets/app-footer.scss',
         '~/assets/scss/components/widgets/home-preview.scss',
         // shared
         '~/assets/scss/components/shared/container.scss',
